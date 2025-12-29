@@ -33,6 +33,31 @@ http://127.0.0.1:8000/docs
 
 ---
 
+## Available Endpoints
+
+### POST /qa
+Performs question answering on a given context.
+
+#### Input
+```text
+{
+  "question": "type question",
+  "context": "Notes"
+}
+```
+
+### POST /summarize
+Generates a concise summary from a longer text input.
+
+### Input
+```text
+{
+  "text": "Long input text to summarize..."
+}
+```
+
+---
+
 ## Model Choices & Design Decisions
 - Question Answering: deepset/roberta-base-squad2
 - Summarization: sshleifer/distilbart-cnn-12-6
