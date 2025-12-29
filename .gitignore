@@ -1,0 +1,4 @@
+hf-local/
+__pycache__/
+.cache/
+.env
