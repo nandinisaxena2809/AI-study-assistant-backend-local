@@ -49,7 +49,7 @@ Performs question answering on a given context.
 ### POST /summarize
 Generates a concise summary from a longer text input.
 
-### Input
+#### Input
 ```text
 {
   "text": "Long input text to summarize..."
