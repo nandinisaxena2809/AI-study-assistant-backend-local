@@ -1,4 +1,4 @@
-# Local ML Inference API (Zero Cost)
+# Local ML Inference API
 
 A FastAPI backend that performs Question Answering using a locally hosted Transformer model. No external inference APIs are used.
 
