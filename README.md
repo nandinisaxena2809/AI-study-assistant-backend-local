@@ -1,11 +1,14 @@
 # Local ML Inference API
 
-A FastAPI backend that performs Question Answering using a locally hosted Transformer model. No external inference APIs are used.
+A FastAPI-based backend service that performs **Question Answering** and **Text Summarization**
+using **locally hosted transformer models**.  
+This project intentionally avoids paid cloud inference APIs and runs entirely on local CPU.
 
 ## Features
+- Question Answering using a locally hosted RoBERTa model  
+- Text Summarization using a **distilled BART model** optimized for CPU inference
 - Runs fully locally (CPU-based)
-- No Hugging Face Inference API
-- Zero cost inference
+- Zero-cost inference (no Hugging Face Inference API, no cloud compute)
 - Auto-generated Swagger docs
 
 ## Tech Stack
@@ -13,6 +16,7 @@ A FastAPI backend that performs Question Answering using a locally hosted Transf
 - FastAPI
 - Hugging Face Transformers
 - PyTorch
+- Uvicorn
 
 ## Setup
 
@@ -26,3 +30,10 @@ Open:
 ```text
 http://127.0.0.1:8000/docs
 ```
+
+---
+
+## Model Choices & Design Decisions
+- Question Answering: deepset/roberta-base-squad2
+- Summarization: sshleifer/distilbart-cnn-12-6
+
