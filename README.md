@@ -1,14 +1,12 @@
 # AI Study Assistant Backend
 
-A FastAPI-based backend service that performs **Question Answering** and **Text Summarization**
-using **locally hosted transformer models**.  
+A FastAPI-based backend service that performs **Question Answering** and **Text Summarization** using **locally hosted transformer models**.  
 
 ## Features
 - Question Answering using a locally hosted RoBERTa model  
 - Text Summarization using a **distilled BART model** optimized for CPU inference
 - Runs fully locally (CPU-based)
 - Zero-cost inference (no Hugging Face Inference API, no cloud compute)
-- Auto-generated Swagger docs
 
 ## Tech Stack
 - Python
@@ -57,7 +55,7 @@ Generates a concise summary from a longer text input.
 
 ---
 
-## Model Choices & Design Decisions
+## Model Choices
 - Question Answering: deepset/roberta-base-squad2
 - Summarization: sshleifer/distilbart-cnn-12-6
 
