@@ -1,4 +1,4 @@
-# Local ML Inference API
+# AI Study Assistant Backend
 
 A FastAPI-based backend service that performs **Question Answering** and **Text Summarization**
 using **locally hosted transformer models**.  
