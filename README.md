@@ -2,7 +2,6 @@
 
 A FastAPI-based backend service that performs **Question Answering** and **Text Summarization**
 using **locally hosted transformer models**.  
-This project intentionally avoids paid cloud inference APIs and runs entirely on local CPU.
 
 ## Features
 - Question Answering using a locally hosted RoBERTa model  
